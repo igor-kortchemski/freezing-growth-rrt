@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use this formalization, cite it together with the source paper.
+type: software
+title: "Freezing growth for random recursive trees: Lean formalization"
+repository-code: https://github.com/igor-kortchemski/freezing-growth-rrt
+authors:
+  - family-names: "Kortchemski"
+    given-names: "Igor"
+license: Apache-2.0
+abstract: >-
+  Lean 4 / Mathlib formalization of arXiv:2505.16571v2. The 85-item source
+  inventory has 82 proved claims and retains three research questions as open.
+  Fresh builds and permitted-axiom audits pass. The five Introduction exports
+  pass local sandboxed Comparator with Lean and NanoDa. Full Palomar
+  verification and public upload are deferred; see the verification record.
+keywords:
+  - random recursive trees
+  - freezing
+  - stochastic domination
+  - formal verification
+  - Lean
+references:
+  - type: article
+    title: "Does freezing impede the growth of random recursive trees?"
+    authors:
+      - family-names: Brandenberger
+        given-names: Anna
+      - family-names: Briend
+        given-names: Simon
+      - family-names: Cairns
+        given-names: Hannah
+      - family-names: Khanfir
+        given-names: Robin
+      - family-names: Kortchemski
+        given-names: Igor
+    year: 2025
+    url: "https://arxiv.org/abs/2505.16571v2"
+    identifiers:
+      - type: other
+        value: "arXiv:2505.16571v2"

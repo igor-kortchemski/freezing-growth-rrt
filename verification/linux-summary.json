@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-11-02T23:10:54.016181+00:00",
+  "mathematical_inputs_checked": 365,
+  "source_archive_sha256": "3387c09566a892628986dbe00bc889e43cd6f90808815072b7d7f9a975c3312b",
+  "build_jobs": 4328,
+  "audited_declarations": 4978,
+  "comparator": "passed",
+  "nanoda": "accepted",
+  "lean_kernel": "accepted",
+  "sandbox": "official Lake Comparator with Bubblewrap namespaces; no sandbox bypass",
+  "selected_theorems": [
+    "FreezingGrowth.Paper.theorem_1_2",
+    "FreezingGrowth.Paper.theorem_1_3",
+    "FreezingGrowth.Paper.proposition_1_1_i",
+    "FreezingGrowth.Paper.proposition_1_1_ii",
+    "FreezingGrowth.Paper.proposition_1_1_iii"
+  ],
+  "tools_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "comparator_configuration_sha256": "8d553db824dc646feb077d2a8a7011cb486ddbe3d835b876e282336e38548e31"
+}

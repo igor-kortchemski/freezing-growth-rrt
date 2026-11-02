@@ -1,0 +1,36 @@
+name: Lean build and axiom audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      # Mathlib's cache plus the compiled library nearly fills a default runner.
+      - uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
+        with:
+          android: true
+          dotnet: true
+          haskell: true
+          docker-images: true
+          large-packages: false
+          swap-storage: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: leanprover/lean-action@fe408643ea7367d8c0404a8be3975bb145f5fb64
+        with:
+          auto-config: false
+          build: true
+      - name: Audit project axiom closures
+        run: lake env lean scripts/AxiomAudit.lean
+      - name: Elaborate the Introduction comparison interface
+        run: lake build Challenge Solution
+
+# This workflow is an ordinary build and axiom audit. It is not Comparator or
+# Palomar verification; see docs/PALOMAR_STATUS.md for what remains.

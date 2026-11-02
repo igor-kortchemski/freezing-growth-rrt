@@ -1,0 +1,427 @@
+Checked 4978 FreezingGrowth declarations; all transitive axioms belong to propext, Classical.choice, Quot.sound.
+'FreezingGrowth.Paper.bennett' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.criticalClockUpperBound_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.sourceMeanHeightExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.sourceHeight_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanCenteredHeightConcentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_logarithmic_increment_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.uniformHeightGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.freezeAttachExpectedGap_floor_bounded_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.highPopulation_mean_log_ratio_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceLongerHistoryLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceDelayedLaw_pending_shorter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.paper_height_comparison_and_split_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceDelayedLaw_terminal_maxDepth_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceFirstUseHistoryLaw_firstUse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.FirstUseAt.reverse_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceFirstUseHistoryLaw_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.delayedHistoryLaw_shorter_pendingTag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceShorterTaggedHistoryLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.orderedHistoryLaw_deletion_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceDelayedLaw_shorter_treeLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceCoupling_heightLE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Forward.ValidAt.height_eq_tree_dist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Forward.treeLaw_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Forward.heightLaw_succ_freeze' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.heightMixture_eq_height_add_corrections' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.family_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.familyMinimum_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.uniformHeightProbabilityClaim_iff_minimum_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Word.first_peak_deletion_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.profile_height_lower_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.lowPopulation_uniform_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.lowPopulation_uniform_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.eventually_populationCutoff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.map_treeLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.map_law_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Forward.uniformActiveHeightLaw_eq_bernoulliSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.bernoulliProductLaw_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.exists_surviving_bernoulli_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.uniformVertexDepthLaw_deviation_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.uniformVertexDepthLaw_upper_tail_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.alternating_height_tendsto_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.binomial_tail_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ProfileCompute.expectedHeight_eq_integer_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Word.high_population_domination_of_firstPairDeletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.tendsto_highPopulation_center_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.heightLaw_eq_orderedReverseHeightLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.heightProfile_joinChoice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.heightProfile_insertLabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.heightProfile_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseHeightList.finishLaw_tail_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseHeightList.finishLaw_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Scaling.height_scaling_limit_positive_horizons' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Scaling.height_scaling_limit_vertices_positive_horizons' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Scaling.strictMonoOn_bennettRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.firstPairDeletionClaim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.first_peak_deletion_heightLE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseHeightList.finishLaw_tail_le_prepend_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Word.heightLaw_eq_runBackward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.high_population_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.high_population_expectedHeight_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Word.HeightLE.expectedHeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.first_edge_split_joint_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.height_one_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Alternating.height_one_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Alternating.not_heightLE_rrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.theorem_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.observation_2_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.rrt_first_edge_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.question_3_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ProfileCompute.statistics_run_two_attach_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ProfileCompute.weightedSum_chunks' depends on axioms: [propext, Classical.choice, Quot.sound]
+FreezingGrowth.RRT.uniformVertexDepthLaw_deviation_tendsto_zero {ε : ℝ} (hε : 0 < ε) :
+  Filter.Tendsto (fun n => (FreezingGrowth.RRT.uniformVertexDepthLaw n).real {k | ε ≤ |↑k / Real.log ↑n - 1|})
+    Filter.atTop (nhds 0)
+FreezingGrowth.Word.exists_surviving_bernoulli_representation (xs : FreezingGrowth.Word) (ha : xs.admissible) :
+  ∃ k ≤ List.length xs,
+    ∃ (hk : FreezingGrowth.PositiveThrough xs.toSigns k),
+      FreezingGrowth.plusCount xs.toSigns k = xs.attachments ∧
+        FreezingGrowth.Forward.heightLaw xs.toSigns k = xs.heightLaw ∧
+          ProbabilityTheory.HasLaw (fun ω => ∑ i with xs.toSigns (↑i + 1) = true, ω i)
+            (FreezingGrowth.Forward.uniformActiveHeightLaw xs.toSigns k)
+            (FreezingGrowth.bernoulliProductLaw (FreezingGrowth.populationBernoulliParameter xs.toSigns k hk))
+FreezingGrowth.Word.binomial_tail_lower_bound (xs : FreezingGrowth.Word) (ha : xs.admissible) (r : ℝ) (hr : 1 ≤ r)
+  (hcap : ∀ i < List.length xs, xs.toSigns (i + 1) = true → ↑(FreezingGrowth.activeCount xs.toSigns (i + 1)) ≤ r)
+  (h : ℕ) :
+  (ProbabilityTheory.binomial xs.attachments (FreezingGrowth.Word.reciprocalParameter r hr)).real {k | h ≤ k} ≤
+    xs.heightLaw.real {k | h ≤ k}
+FreezingGrowth.Word.high_population_domination_of_firstPairDeletion (hdelete : FreezingGrowth.FirstPairDeletionClaim)
+  (xs : FreezingGrowth.Word) (ha : xs.admissible) {r : ℕ}
+  (hhigh : ∃ j ≤ List.length xs, ↑r ≤ FreezingGrowth.activeCount xs.toSigns j) :
+  FreezingGrowth.Word.HeightLE (List.replicate (r - 1) true) xs
+FreezingGrowth.Scaling.height_scaling_limit_vertices_positive_horizons {x : ℕ → ℕ → ℤ} {α : ℝ} {f : ℝ → ℝ}
+  (hx : ∀ (n : ℕ), 0 < n → FreezingGrowth.Scaling.IsSigned (x n) ∧ FreezingGrowth.Scaling.SurvivesThrough (x n) n)
+  (hα0 : 0 < α) (hα1 : α < 1) (hf : ∀ᵐ (t : ℝ) ∂FreezingGrowth.Scaling.profileMeasure, 0 < f t)
+  (hL1 : FreezingGrowth.Scaling.HasL1ReciprocalProfile x α fun t => 1 / f t) {p : ℝ} (hp : 1 ≤ p) :
+  Filter.Tendsto
+    (fun n =>
+      MeasureTheory.eLpNorm
+        (fun s =>
+          ↑(FreezingGrowth.Forward.treeHeight s) / ↑s.vertices.card ^ (1 - α) -
+            2 ^ (1 - α) * ∫ (t : ℝ) in Set.Icc 0 1, 1 / (2 * f t))
+        (ENNReal.ofReal p) (FreezingGrowth.Scaling.freezingTreeLaw x n))
+    Filter.atTop (nhds 0)
+FreezingGrowth.Paper.theorem_1_3 : FreezingGrowth.FirstPairDeletionClaim
+FreezingGrowth.Word.high_population_domination (xs : FreezingGrowth.Word) (ha : xs.admissible) {r : ℕ}
+  (hhigh : ∃ j ≤ List.length xs, ↑r ≤ FreezingGrowth.activeCount xs.toSigns j) :
+  FreezingGrowth.Word.HeightLE (List.replicate (r - 1) true) xs
+FreezingGrowth.Paper.observation_2_1 {n : ℕ} (hn : 3 ≤ n) :
+  ¬FreezingGrowth.Word.HeightLE (List.replicate n true) (FreezingGrowth.alternatingWord n)
+FreezingGrowth.Paper.rrt_first_edge_split (n : ℕ) :
+  MeasureTheory.Measure.map (FreezingGrowth.RRTSplit.firstEdgeSplit n)
+      (FreezingGrowth.Forward.treeLaw FreezingGrowth.RRT.allAttach (n + 1)) =
+    (MeasureTheory.Measure.uniformOfFinset (Finset.range (n + 1))).bind fun k =>
+      MeasureTheory.Measure.map (fun p => (k, p.1, p.2))
+        ((FreezingGrowth.Forward.treeLaw FreezingGrowth.RRT.allAttach k).prod
+          (FreezingGrowth.Forward.treeLaw FreezingGrowth.RRT.allAttach (n - k)))
+FreezingGrowth.Paper.question_3_lower_bound : FreezingGrowth.Question3LowerBoundClaim
+'FreezingGrowth.RRT.meanHeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_div_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_exists_small_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.pairLaw_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightPairLaw_tie_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.single_seed_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.join_seed_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.short_word_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.long_word_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removalShort_expectedHeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removalLong_expectedHeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removal_expectedHeight_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removal_reversal_arbitrarily_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removeAttachClaim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.proposition_1_1_iii' depends on axioms: [propext, Classical.choice, Quot.sound]
+FreezingGrowth.Paper.proposition_1_1_iii : FreezingGrowth.RemoveAttachClaim
+FreezingGrowth.removal_reversal_arbitrarily_late (N : ℕ) :
+  ∃ n, N ≤ n ∧ 2 ≤ n ∧ (FreezingGrowth.removalLong n).expectedHeight < (FreezingGrowth.removalShort n).expectedHeight
+'FreezingGrowth.removalShort_height_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removalLong_height_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removal_not_heightLE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.negativeMoment_succ_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.negativeMoment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.height_lower_tail_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_increment_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthHeightLaw_fst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_increment_eq_deepest_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.meanHeight_increment_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removal_reversal_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.proposition_1_1_iii_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.removal_not_stochastic_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+FreezingGrowth.RRT.negativeMoment_bound : ∃ C, 0 < C ∧ ∀ (n : ℕ), FreezingGrowth.RRT.negativeMoment n ≤ C / (↑n + 1)
+FreezingGrowth.RRT.height_lower_tail_tendsto_zero :
+  Filter.Tendsto
+    (fun n => (FreezingGrowth.Forward.heightLaw FreezingGrowth.RRT.allAttach n).real {h | ↑h ≤ 11 / 10 * Real.log ↑n})
+    Filter.atTop (nhds 0)
+FreezingGrowth.RRT.meanHeight_increment_eq_deepest_probability (n : ℕ) :
+  FreezingGrowth.RRT.meanHeight (n + 1) - FreezingGrowth.RRT.meanHeight n =
+    (FreezingGrowth.RRT.depthHeightLaw n).real {p | p.1 = p.2}
+FreezingGrowth.Paper.proposition_1_1_iii_eventually :
+  ∀ᶠ (n : ℕ) in Filter.atTop,
+    (FreezingGrowth.removalLong n).expectedHeight < (FreezingGrowth.removalShort n).expectedHeight
+'FreezingGrowth.RRT.lowerCenter_sub_le_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.lowerDeficit_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.highPopulation_lowerCenter_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.tendsto_highPopulation_lowerCenter_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.tendsto_highPopulation_lowerCenter_two_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightLaw_real_lt_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightLaw_real_le_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightLaw_cdf_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightLaw_cdf_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.heightLaw_cdf_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.card_centralSplits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.half_le_card_centralSplits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.split_average_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.lowerTail_geometric_of_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.lowerDeficit_le_of_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.uniformLowerDeficit_of_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.constantSuccessSeed_of_eventual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.lowerCenter_sub_deficit_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.gap_mul_lowerTail_le_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.uniformHeightClaims_of_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.uniformHeightClaims_of_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.ae_all_birth_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.firstBirth_joint_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.map_birth_finite_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.heightCDF_firstBirth_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.scalar_renewal_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.map_birth_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.integral_rankBirthCount_eq_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.heightCDF_renewal_integratingFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.heightCDF_eq_geometricCdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.reaches_probability_eq_geometric_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_seedIndex_time_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.constantSuccessSeed_of_clockLowerSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.sum_integral_rankBirthCount_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.hasSum_integral_rankBirthCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.lintegral_generationCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.integral_generationCount_toReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.integral_leading_rankClass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.rankIncrementMeasure_eq_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.uniformRankIncrementLaw_normalized_joint_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.uniformRankIncrementLaw_normalized_independent_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.gammaPDFReal_nat_succ_lower_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.gammaPDFReal_nat_succ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.gammaMeasure_nat_succ_standardized_window_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.tendsto_critical_log_intensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.lintegral_pathEventCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.integral_leadingCount_Ioc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.eventually_exactLeadingWindowCount_mean_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.overlap_factor_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.summable_pow_mul_exp_neg_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.probability_pos_lower_of_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.offspringPairIntensity_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.rootArrivals_childSamples_joint_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.generationIncrementIntensity_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.extendedGenerationPairIntensity_manyToTwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.map_extendedGenerationPairIntensity_restrict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.generationSpacing_eq_scaled_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.exists_simplex_nearLeading_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.nearLeadingIntensityDensity_exp_upper_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.integral_nearLeadingIntensityDensity_Ioc_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.lintegral_vectorEventCount_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.vectorEventCount_endpointLeading' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.lintegral_vectorEventCount_sq_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.sum_threeFactorDepthWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.overlapIntensity_critical_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.uniform_exactLeadingWindow_secondMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.clockLowerSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.uniformHeightClaims' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.theorem_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.theorem_1_2_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.theorem_1_2_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.uniformUpperExcess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.uniformRoughAbsoluteDeviation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.uniformRoughHeightGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthCenteredMoment_four_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.treeMeanFluctuation_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.expectedDistinctDepthGap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_expectedDistinctDepthGap_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.twoActivePrefix_profile_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.tendsto_expectedTwoSurvivorGap_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_expectedDistinctDepthGap_sub_natPolynomialSuffixLogLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.seeded_pair_gap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.uniformLowerTailExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.HeightProfile.expectedHeight_twoActivePrefix_freeze_attach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.HeightProfile.expectedHeight_twoActivePrefix_attach_freeze' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRTSplit.uniformResidualBound_pow_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.freezeAttachExpectedGap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.tendsto_freezeAttachExpectedGap_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.attachFreeze_expected_gap_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removeFreezeAttachClaim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.removeAttachFreezeClaim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.proposition_1_1_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.proposition_1_1_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.proposition_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.paperPrefixSize_pow_nine_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.tendsto_paperPrefixSize_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.uniformResidualBound_of_pow_nine_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.freezeAttachExpectedGap_floor_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.attachFreezeExpectedGap_floor_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.attachFreezeExpectedDifference_floor_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.depthMaximumLaw_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.depthMaximumLaw_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.source_height_coupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.source_decompositions_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.residual_uniform_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.tendsto_meanZPositive_paperPrefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.tendsto_meanHatZPositive_paperPrefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.sourceZPositive_strict_tail_le_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.sourceHatZPositive_strict_tail_le_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.Forward.twoSeedTaggedFreezeLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.heightLaw_boundedHeight_le_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.question2_threshold_divergence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.Paper.question_2_threshold_divergence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.heightLaw_firstOrder_in_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.meanHeight_div_log_tendsto_exp_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.taggedHeightModelLaw_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.caseTag_independent_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.taggedHeightModelLaw_restrict_case' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.taggedHeight_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRTSplit.firstEdgeSplit_first_height_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.caseHeightLaw_zero_mean_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.caseHeightLaw_one_mean_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedCoupling.case_two_expected_difference_floor_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.seed_three_quarters_of_constantSuccessSeed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.uniformLowerTailPaperRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.eventually_paper_centered_event_inclusions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.paper_height_comparison_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.constantSuccessSeed_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.uniformLowerDeficit_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.twoActivePrefix_treePairLaw_eq_bind_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.gammaPDFReal_nat_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.gammaMeasure_nat_unitBand_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.softBridge_probability_le_occupancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.simplex_softBridge_probability_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.simplex_near_position_probability_eq_occupancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.simplex_leading_occupancy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.simplex_leading_occupancy_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.short_log_window_allowance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.sum_min_logBallotWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.degreeBallotPolynomial_exp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.treeLaw_order_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceInitializationLaw_ae_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceInitializationLaw_shorter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceInitializationLaw_one_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.prependLabel_joinChoice_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.ReverseOrdered.initializationChoice_pending_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.PWIT.simplex_log_occupancy_le_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.simplex_log_occupancy_short_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.heightLaw_critical_upper_tail_of_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.simplex_log_ballot_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceDelayedLaw_ae_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.ReverseOrdered.sourceDelayedLaw_terminal_used' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.uniformCriticalAbsoluteDeviation_of_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.uniformCriticalMeanDeviation_of_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.criticalCrossingBarrier_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.criticalCrossingBarrier_first_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.PWIT.criticalCrossingBarrier_second_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifference_central_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifference_tendstoInDistribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RemoveAttachTreeCoupling.source_full_tree_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_graphs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_orderedSeeds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_ae_prefix_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

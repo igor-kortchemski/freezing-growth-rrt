@@ -1,0 +1,7 @@
+{
+  "source_archive_sha256": "3387c09566a892628986dbe00bc889e43cd6f90808815072b7d7f9a975c3312b",
+  "mathematical_input_manifest_sha256": "5c2b91a50ec5836e31e400b6611c0576b38f12942fcff2c285e78a62340fe9c8",
+  "mathematical_inputs": 365,
+  "match": "all exact",
+  "note": "Final publication documentation may be updated after verification; mathematical source, toolchain, dependency manifest, Lake targets and Comparator config are identified separately."
+}

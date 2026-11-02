@@ -1,0 +1,14 @@
+{
+  "source_sha256": "7b7d6ef6e2200b3129cbd4a74ef45c09fbf758643ce63489bf67f2aef93301f3",
+  "inventory_items": 85,
+  "complete": 82,
+  "partial": 0,
+  "pending": 0,
+  "open_questions": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "qualification": "Corrected forms SF1\u2013SF6 and documented proof departures retained; no certification of erroneous literal source formulas.",
+  "independent_review": "/root/independent_review source-first reconciliation PASS, 2 November 2026"
+}

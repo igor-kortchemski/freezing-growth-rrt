@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "FreezingGrowth.Paper.theorem_1_2",
+    "FreezingGrowth.Paper.theorem_1_3",
+    "FreezingGrowth.Paper.proposition_1_1_i",
+    "FreezingGrowth.Paper.proposition_1_1_ii",
+    "FreezingGrowth.Paper.proposition_1_1_iii"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

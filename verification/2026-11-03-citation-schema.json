@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checked_local_date": "2026-11-03",
+  "schema_url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+  "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+  "artifact": "CITATION.cff",
+  "artifact_sha256": "1663e3e8b94e9fc663300653be178d68cd24c2b84ab94238a2d56f21f0c52a9a"
+}

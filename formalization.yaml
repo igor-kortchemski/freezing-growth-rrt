@@ -1,0 +1,266 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Freezing growth for random recursive trees",
+    "description": "Lean 4 formalization of arXiv:2505.16571v2. The source inventory retains 82 completed mathematical claims, with documented source corrections, and three open research questions. The five numbered Introduction results pass local sandboxed Comparator, Lean kernel replay and NanoDa checking. Full Palomar verification and publication are deferred.",
+    "authors": [
+      "Igor Kortchemski"
+    ],
+    "responsible_maintainers": [
+      "Igor Kortchemski"
+    ],
+    "license": "Apache-2.0"
+  },
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C05",
+      "60C05"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Does freezing impede the growth of random recursive trees?",
+      "authors": [
+        "Anna Brandenberger",
+        "Simon Briend",
+        "Hannah Cairns",
+        "Robin Khanfir",
+        "Igor Kortchemski"
+      ],
+      "id": "https://arxiv.org/abs/2505.16571v2",
+      "type": "paper",
+      "relationship": "formalizes",
+      "note": "arXiv v2, 4 May 2026; source SHA-256 7b7d6ef6e2200b3129cbd4a74ef45c09fbf758643ce63489bf67f2aef93301f3. Igor Kortchemski is a paper coauthor and the formalization author and maintainer; this records participation, not independent endorsement. The manuscript sources and figures are not included; Apache-2.0 covers the formalization code, not the article.",
+      "license": "CC BY 4.0 (as listed on the arXiv record)",
+      "author_endorsement": "participated"
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "local:freezing1-and-freezing2",
+      "relationship": "adapts",
+      "note": "The forward-model foundations, Bennett concentration and reverse-forest modules were adapted from two local sibling formalizations of companion papers (Apache-2.0, copyright 2026 Igor Kortchemski; scaling modules covered by an explicit user confirmation of Apache-2.0 for this project). Source hashes and transformations are in NOTICE and SCALING_PROVENANCE.md. No public repository is asserted for them here."
+    }
+  ],
+  "status": {
+    "scope": "All 85 source-inventory IDs are retained: 82 non-question claims are complete in the source-faithful or documented corrected forms, and three research questions remain open. Fresh macOS and Linux builds passed with 4,328 jobs; both global axiom audits checked 4,978 declarations with only propext, Classical.choice and Quot.sound. Exactly five Introduction exports passed official local sandboxed Comparator with both Lean and NanoDa. The five deliberate Challenge-only theorem placeholders are excluded from sorry_count under the metadata schema; all actual proofs are hole-free. Full Palomar verification and publication remain deferred. See FORMALIZATION_REPORT.md and docs/VERIFICATION.md.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_results": [
+      {
+        "declaration": "FreezingGrowth.Paper.theorem_1_2",
+        "file": "FreezingGrowth/PaperResults.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json"
+      },
+      {
+        "declaration": "FreezingGrowth.Paper.theorem_1_3",
+        "file": "FreezingGrowth/PaperResults.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json"
+      },
+      {
+        "declaration": "FreezingGrowth.Paper.proposition_1_1_i",
+        "file": "FreezingGrowth/PaperResults.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json"
+      },
+      {
+        "declaration": "FreezingGrowth.Paper.proposition_1_1_ii",
+        "file": "FreezingGrowth/PaperResults.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json"
+      },
+      {
+        "declaration": "FreezingGrowth.Paper.proposition_1_1_iii",
+        "file": "FreezingGrowth/PaperResults.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json"
+      }
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "OpenAI Codex agents (earlier exact identifiers not retained)",
+          "GPT-6 Astra (coordinator, final campaign)",
+          "GPT-6.1 Sol (proofs and review, final campaign)",
+          "GPT-6 Luna (bounded proof and preparation tasks, final campaign)"
+        ],
+        "framework": "Codex",
+        "tool_setup": "Local Lean and Mathlib proof development with parallel agents, serialized compilation, source audits and axiom checks.",
+        "cost": {
+          "wall_time": "not tracked",
+          "spend_usd": "not tracked",
+          "hardware": "local macOS development machine"
+        },
+        "prompting_notes": "Formalize every theorem and substantive claim of the supplied paper, keep the full inventory, and distinguish proved results from conditional helpers."
+      },
+      {
+        "method": "agent",
+        "models": [
+          "Claude Code (earlier development model identifier not retained)",
+          "Claude Sonnet 5.5 (claude-sonnet-5-5; bounded III1 design review on 2 November 2026)"
+        ],
+        "framework": "Claude Code",
+        "tool_setup": "Earlier Claude work resumed the saved development, repaired and compiled reverse-forest, first-edge split and star-probability modules, and prepared an earlier candidate. The final campaign used a read-only Claude Sonnet 5.5 review of the consecutive-size shared-master design; the full source/proof reviews and final integration evidence are recorded separately.",
+        "cost": {
+          "wall_time": "not tracked",
+          "spend_usd": "not tracked",
+          "hardware": "local macOS development machine"
+        },
+        "prompting_notes": "Continue from the saved development state without weakening statements; keep Lean and Mathlib at 4.35.0."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "AI agents developed the proofs and cross-checked statements in read-only reviews. No independent human mathematical review and no editorial endorsement is claimed."
+  },
+  "fidelity": {
+    "divergences": "See FORMALIZATION_REPORT.md for source corrections SF1\u2013SF6 and substantive proof departures. The Introduction results have unconditional proofs. The source reverse delayed coupling is also proved. E4 uses a direct characteristic-function proof rather than checking the cited Lodewijks proof. Finite Boolean words encode attachments and freezes, with actual vertex identifiers and frozen data retained."
+  },
+  "review": {
+    "status": "Independent read-only AI statement/proof-route reviews passed for the documented scopes; local builds, axiom audits and the five-result sandboxed Comparator with Lean and NanoDa passed.",
+    "reviewers": [],
+    "notes": "Independent read-only AI reviews checked source fidelity and proof routes, including full-state/history couplings I2 and II1, the shared-master III1 construction, and E4, and separately the five-result Challenge and its informal account. No independent human mathematical review or editorial endorsement is claimed. Whole-library builds and global axiom audits are distinct from the five-result Comparator/kernel checks. Full Palomar verification remains unrun; no upload, submission or registration occurred. See docs/VERIFICATION.md."
+  },
+  "alignment": {
+    "namespace": "FreezingGrowth",
+    "statements": [
+      {
+        "source": "Theorem 1.3 (prop:decreaseheight)",
+        "lean": "FreezingGrowth.Paper.theorem_1_3",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Exact claim FirstPairDeletionClaim; includes k = 1 and terminal extinction; validity of the shortened word is a conclusion."
+      },
+      {
+        "source": "Observation 2.1",
+        "lean": "FreezingGrowth.Paper.observation_2_1",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "For n >= 3; combined with the proved star probabilities 1/n! and 2^{-(n-1)}."
+      },
+      {
+        "source": "Proposition 3.1 (prop:bennett)",
+        "lean": "FreezingGrowth.Paper.bennett",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Both tails, every t > 0."
+      },
+      {
+        "source": "Low-population branch of Theorem 1.2",
+        "lean": "FreezingGrowth.Word.lowPopulation_uniform_probability",
+        "module": "FreezingGrowth.LowPopulationAsymptotic",
+        "status": "proved",
+        "note": "The full uniform probability conclusion is proved in Paper.theorem_1_2; this row identifies the low-population branch dependency."
+      },
+      {
+        "source": "First-edge split (E3)",
+        "lean": "FreezingGrowth.Paper.rrt_first_edge_split",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Law identity for the canonically relabelled full component states."
+      },
+      {
+        "source": "Open question (3), asserted bound (item Q3a)",
+        "lean": "FreezingGrowth.Paper.question_3_lower_bound",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Only the bound liminf N_n/(n log_2 n) >= 1 for any dominating sequence, in epsilon form; the open question itself is not claimed."
+      },
+      {
+        "source": "Proposition 1.1(i)",
+        "lean": "FreezingGrowth.Paper.proposition_1_1_i",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Includes the same-witness freezing-only consequence."
+      },
+      {
+        "source": "Proposition 1.1(ii)",
+        "lean": "FreezingGrowth.Paper.proposition_1_1_ii",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Actual attachment/freezing deletion expected-height gap."
+      },
+      {
+        "source": "Theorem 1.2",
+        "lean": "FreezingGrowth.Paper.theorem_1_2",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Both probability and expectation conclusions are uniform over all admissible words."
+      },
+      {
+        "source": "Full-state/history coupling for first-edge grafting (I2)",
+        "lean": "FreezingGrowth.TwoSeedGraft.source_freezeAttach_history_coupling",
+        "module": "FreezingGrowth.TwoSeedGraftSource",
+        "status": "proved",
+        "note": "The entire source-word histories and their literal common prefix are realized on one space; the same actual master supplies the full first-edge component split."
+      },
+      {
+        "source": "Full-state/history coupling for the three freeze cases (II1)",
+        "lean": "FreezingGrowth.TwoSeedGraft.source_attachFreeze_history_coupling",
+        "module": "FreezingGrowth.TaggedGraftProcessSource",
+        "status": "proved",
+        "note": "All three complete graft states and histories retain the frozen child in case (a), with an independent uniform case tag and exact word marginals."
+      },
+      {
+        "source": "Consecutive-size full-tree coupling (III1)",
+        "lean": "FreezingGrowth.RemoveAttachTreeCoupling.source_full_tree_coupling",
+        "module": "FreezingGrowth.RemoveAttachTreeSource",
+        "status": "proved",
+        "note": "Both exact word laws use one nested actual master parent array; the smaller RRT is its actual replayed prefix. Independent prefix sampling is chosen because the source specifies no joint law between the two prefixes."
+      },
+      {
+        "source": "Joint depth-difference Gaussian limit (E4)",
+        "lean": "FreezingGrowth.RRT.depthDifference_tendstoInDistribution",
+        "module": "FreezingGrowth.RRTDepthDifferenceCLT",
+        "status": "proved",
+        "note": "Two distinct uniform vertex IDs in the same actual RRT have depth difference divided by sqrt(log n) converging to N(0,2). The proof uses a direct characteristic-function argument, not a verification of the cited Lodewijks proof."
+      },
+      {
+        "source": "Proposition 1.1(iii)",
+        "lean": "FreezingGrowth.Paper.proposition_1_1_iii",
+        "module": "FreezingGrowth.PaperResults",
+        "status": "proved",
+        "note": "Strict expected-height reversal, proved analytically. The library also proves eventual reversal without an n=13 enumeration."
+      }
+    ]
+  },
+  "acknowledgements": "Lean, Mathlib and the cited mathematical literature; the companion formalizations credited in NOTICE."
+}

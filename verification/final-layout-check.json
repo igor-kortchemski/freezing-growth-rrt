@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_local_date": "2026-11-03",
+  "mathematical_inputs_unchanged": 365,
+  "lean_files": 361,
+  "largest_lean_lines": 650,
+  "challenge_lines": 227,
+  "challenge_bytes": 8536,
+  "public_tree_bytes": 2935559,
+  "local_markdown_links": "all resolve",
+  "private_path_and_credential_pattern_scan": "no hits",
+  "proof_metadata_schema_hashes": "match",
+  "compiled_outputs_outside_lake": 0
+}

@@ -1,0 +1,9 @@
+⚠ [4327/4332] Built Challenge (6.0s)
+warning: Challenge.lean:211:8: declaration uses `sorry`
+warning: Challenge.lean:214:8: declaration uses `sorry`
+warning: Challenge.lean:217:8: declaration uses `sorry`
+warning: Challenge.lean:220:8: declaration uses `sorry`
+warning: Challenge.lean:223:8: declaration uses `sorry`
+✔ [4329/4332] Built Solution (8.7s)
+✔ [4331/4332] Built FreezingGrowth (8.8s)
+Build completed successfully (4332 jobs).

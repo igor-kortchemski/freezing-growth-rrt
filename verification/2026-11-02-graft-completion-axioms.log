@@ -1,0 +1,34 @@
+'FreezingGrowth.TwoSeedGraft.historySampleLaw_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.historySampleLaw_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.historySampleLaw_treePair_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.historySampleLaw_baselineHistory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.historySampleLaw_longHistory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.historySample_entire_common_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_freezeAttach_history_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_history_treePair_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_history_both_graft_graphs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.taggedHistoryLaw_joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.taggedHistoryLaw_longHistory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.TwoSeedGraft.taggedHistory_entire_common_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_attachFreeze_history_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_attachFreeze_history_treePair_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_attachFreeze_history_all_case_graphs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.TwoSeedGraft.source_attachFreeze_full_state_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

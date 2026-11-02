@@ -1,0 +1,322 @@
+module
+
+import FreezingGrowth
+meta import Lean.Elab.Command
+meta import Lean.Util.CollectAxioms
+
+/-! Inspect all public project declarations transitively. This checks axiom
+dependencies, not source fidelity, Comparator, or an independent kernel. -/
+
+open Lean Elab Command in
+run_cmd do
+  let env ← getEnv
+  let allowed : Array Name := #[``propext, ``Classical.choice, ``Quot.sound]
+  let mut checked : Nat := 0
+  for (name, _) in env.constants.toList do
+    if (`FreezingGrowth).isPrefixOf name then
+      let axioms ← Lean.collectAxioms name
+      for axiomName in axioms do
+        unless allowed.contains axiomName do
+          throwError "Forbidden axiom {axiomName} in {name}"
+      checked := checked + 1
+  logInfo m!"Checked {checked} FreezingGrowth declarations; all transitive axioms belong to propext, Classical.choice, Quot.sound."
+
+#print axioms FreezingGrowth.Paper.bennett
+#print axioms FreezingGrowth.PWIT.criticalClockUpperBound_actual
+#print axioms FreezingGrowth.RRT.sourceMeanHeightExpansion
+#print axioms FreezingGrowth.RRT.sourceHeight_tight
+#print axioms FreezingGrowth.RRT.meanCenteredHeightConcentration
+#print axioms FreezingGrowth.RRT.meanHeight_logarithmic_increment_ratio
+#print axioms FreezingGrowth.RRTSplit.uniformHeightGap
+#print axioms FreezingGrowth.TwoSeedCoupling.freezeAttachExpectedGap_floor_bounded_error
+#print axioms FreezingGrowth.highPopulation_mean_log_ratio_expansion
+#print axioms FreezingGrowth.ReverseOrdered.sourceLongerHistoryLaw_eq
+#print axioms FreezingGrowth.ReverseOrdered.sourceDelayedLaw_pending_shorter
+#print axioms FreezingGrowth.paper_height_comparison_and_split_tails
+#print axioms FreezingGrowth.ReverseOrdered.sourceDelayedLaw_terminal_maxDepth_le
+#print axioms FreezingGrowth.ReverseOrdered.sourceFirstUseHistoryLaw_firstUse
+#print axioms FreezingGrowth.ReverseOrdered.FirstUseAt.reverse_max
+#print axioms FreezingGrowth.ReverseOrdered.sourceFirstUseHistoryLaw_current
+#print axioms FreezingGrowth.ReverseOrdered.delayedHistoryLaw_shorter_pendingTag
+#print axioms FreezingGrowth.ReverseOrdered.sourceShorterTaggedHistoryLaw_eq
+#print axioms FreezingGrowth.ReverseOrdered.orderedHistoryLaw_deletion_tail
+#print axioms FreezingGrowth.ReverseOrdered.sourceDelayedLaw_shorter_treeLaw
+#print axioms FreezingGrowth.ReverseOrdered.sourceCoupling_heightLE
+#print axioms FreezingGrowth.Forward.ValidAt.height_eq_tree_dist
+#print axioms FreezingGrowth.Forward.treeLaw_counts
+#print axioms FreezingGrowth.Forward.heightLaw_succ_freeze
+#print axioms FreezingGrowth.heightMixture_eq_height_add_corrections
+#print axioms FreezingGrowth.Word.family_height_le
+#print axioms FreezingGrowth.Word.familyMinimum_attained
+#print axioms FreezingGrowth.uniformHeightProbabilityClaim_iff_minimum_tendsto
+#print axioms FreezingGrowth.Word.first_peak_deletion_admissible
+#print axioms FreezingGrowth.Word.profile_height_lower_tail
+#print axioms FreezingGrowth.Word.lowPopulation_uniform_probability
+#print axioms FreezingGrowth.Word.lowPopulation_uniform_expectation
+#print axioms FreezingGrowth.eventually_populationCutoff_pos
+#print axioms FreezingGrowth.HeightProfile.map_treeLaw
+#print axioms FreezingGrowth.HeightProfile.map_law_maximum
+#print axioms FreezingGrowth.Forward.uniformActiveHeightLaw_eq_bernoulliSum
+#print axioms FreezingGrowth.bernoulliProductLaw_independent
+#print axioms FreezingGrowth.Word.exists_surviving_bernoulli_representation
+#print axioms FreezingGrowth.RRT.uniformVertexDepthLaw_deviation_tendsto_zero
+#print axioms FreezingGrowth.RRT.uniformVertexDepthLaw_upper_tail_tendsto_zero
+#print axioms FreezingGrowth.alternating_height_tendsto_half
+#print axioms FreezingGrowth.Word.binomial_tail_lower_bound
+#print axioms FreezingGrowth.ProfileCompute.expectedHeight_eq_integer_ratio
+#print axioms FreezingGrowth.Word.high_population_domination_of_firstPairDeletion
+#print axioms FreezingGrowth.tendsto_highPopulation_center_gap
+#print axioms FreezingGrowth.Word.heightLaw_eq_orderedReverseHeightLaw
+#print axioms FreezingGrowth.ReverseOrdered.heightProfile_joinChoice
+#print axioms FreezingGrowth.ReverseOrdered.heightProfile_insertLabel
+#print axioms FreezingGrowth.ReverseOrdered.heightProfile_initial
+#print axioms FreezingGrowth.ReverseHeightList.finishLaw_tail_mono
+#print axioms FreezingGrowth.ReverseHeightList.finishLaw_perm
+#print axioms FreezingGrowth.Scaling.height_scaling_limit_positive_horizons
+#print axioms FreezingGrowth.Scaling.height_scaling_limit_vertices_positive_horizons
+#print axioms FreezingGrowth.Scaling.strictMonoOn_bennettRate
+#print axioms FreezingGrowth.firstPairDeletionClaim
+#print axioms FreezingGrowth.Word.first_peak_deletion_heightLE
+#print axioms FreezingGrowth.ReverseHeightList.finishLaw_tail_le_prepend_zero
+#print axioms FreezingGrowth.Word.heightLaw_eq_runBackward
+#print axioms FreezingGrowth.Word.high_population_domination
+#print axioms FreezingGrowth.Word.high_population_expectedHeight_ge
+#print axioms FreezingGrowth.Word.HeightLE.expectedHeight_le
+#print axioms FreezingGrowth.RRTSplit.first_edge_split_joint_law
+#print axioms FreezingGrowth.RRT.height_one_mass
+#print axioms FreezingGrowth.Alternating.height_one_mass
+#print axioms FreezingGrowth.Alternating.not_heightLE_rrt
+#print axioms FreezingGrowth.Paper.theorem_1_3
+#print axioms FreezingGrowth.Paper.observation_2_1
+#print axioms FreezingGrowth.Paper.rrt_first_edge_split
+#print axioms FreezingGrowth.Paper.question_3_lower_bound
+#print axioms FreezingGrowth.ProfileCompute.statistics_run_two_attach_split
+#print axioms FreezingGrowth.ProfileCompute.weightedSum_chunks
+
+-- Inspect the elaborated statements at the latest source-facing milestone.
+#check FreezingGrowth.RRT.uniformVertexDepthLaw_deviation_tendsto_zero
+#check FreezingGrowth.Word.exists_surviving_bernoulli_representation
+#check FreezingGrowth.Word.binomial_tail_lower_bound
+#check FreezingGrowth.Word.high_population_domination_of_firstPairDeletion
+#check FreezingGrowth.Scaling.height_scaling_limit_vertices_positive_horizons
+#check FreezingGrowth.Paper.theorem_1_3
+#check FreezingGrowth.Word.high_population_domination
+#check FreezingGrowth.Paper.observation_2_1
+#check FreezingGrowth.Paper.rrt_first_edge_split
+#check FreezingGrowth.Paper.question_3_lower_bound
+
+-- Analytic removal comparison and all semantic bridges (roadmap P1–P5).
+#print axioms FreezingGrowth.RRT.meanHeight_le
+#print axioms FreezingGrowth.RRT.meanHeight_div_tendsto_zero
+#print axioms FreezingGrowth.RRT.meanHeight_exists_small_increment
+#print axioms FreezingGrowth.RRTSplit.pairLaw_swap
+#print axioms FreezingGrowth.RRTSplit.heightPairLaw_tie_le_half
+#print axioms FreezingGrowth.HeightProfile.single_seed_growth
+#print axioms FreezingGrowth.HeightProfile.join_seed_growth
+#print axioms FreezingGrowth.HeightProfile.short_word_law
+#print axioms FreezingGrowth.HeightProfile.long_word_law
+#print axioms FreezingGrowth.removalShort_expectedHeight
+#print axioms FreezingGrowth.removalLong_expectedHeight
+#print axioms FreezingGrowth.removal_expectedHeight_comparison
+#print axioms FreezingGrowth.removal_reversal_arbitrarily_late
+#print axioms FreezingGrowth.removeAttachClaim
+#print axioms FreezingGrowth.Paper.proposition_1_1_iii
+#check FreezingGrowth.Paper.proposition_1_1_iii
+#check FreezingGrowth.removal_reversal_arbitrarily_late
+
+-- Remaining Section 2.5 claims (A1–A3).
+#print axioms FreezingGrowth.removalShort_height_one
+#print axioms FreezingGrowth.removalLong_height_one
+#print axioms FreezingGrowth.removal_not_heightLE
+#print axioms FreezingGrowth.RRT.negativeMoment_succ_le
+#print axioms FreezingGrowth.RRT.negativeMoment_bound
+#print axioms FreezingGrowth.RRT.height_lower_tail_tendsto_zero
+#print axioms FreezingGrowth.RRT.meanHeight_increment_eq_integral
+#print axioms FreezingGrowth.RRT.depthHeightLaw_fst
+#print axioms FreezingGrowth.RRT.meanHeight_increment_eq_deepest_probability
+#print axioms FreezingGrowth.RRT.meanHeight_increment_tendsto_zero
+#print axioms FreezingGrowth.removal_reversal_eventually
+#print axioms FreezingGrowth.Paper.proposition_1_1_iii_eventually
+#print axioms FreezingGrowth.Paper.removal_not_stochastic_domination
+#check FreezingGrowth.RRT.negativeMoment_bound
+#check FreezingGrowth.RRT.height_lower_tail_tendsto_zero
+#check FreezingGrowth.RRT.meanHeight_increment_eq_deepest_probability
+#check FreezingGrowth.Paper.proposition_1_1_iii_eventually
+
+#print axioms FreezingGrowth.RRT.lowerCenter_sub_le_quarter
+#print axioms FreezingGrowth.RRT.lowerDeficit_integrable
+#print axioms FreezingGrowth.highPopulation_lowerCenter_gap_lower
+#print axioms FreezingGrowth.tendsto_highPopulation_lowerCenter_gap
+#print axioms FreezingGrowth.tendsto_highPopulation_lowerCenter_two_gap
+
+#print axioms FreezingGrowth.RRTSplit.heightLaw_real_lt_succ
+#print axioms FreezingGrowth.RRTSplit.heightLaw_real_le_succ
+#print axioms FreezingGrowth.RRTSplit.heightLaw_cdf_succ
+#print axioms FreezingGrowth.RRTSplit.heightLaw_cdf_initial
+#print axioms FreezingGrowth.RRTSplit.heightLaw_cdf_zero
+#print axioms FreezingGrowth.RRTSplit.card_centralSplits
+#print axioms FreezingGrowth.RRTSplit.half_le_card_centralSplits
+
+#print axioms FreezingGrowth.RRTSplit.split_average_contraction
+#print axioms FreezingGrowth.RRT.lowerTail_geometric_of_seed
+
+#print axioms FreezingGrowth.RRT.lowerDeficit_le_of_seed
+#print axioms FreezingGrowth.RRT.uniformLowerDeficit_of_seed
+#print axioms FreezingGrowth.RRT.constantSuccessSeed_of_eventual
+#print axioms FreezingGrowth.RRT.lowerCenter_sub_deficit_le_mean
+#print axioms FreezingGrowth.RRT.gap_mul_lowerTail_le_deficit
+#print axioms FreezingGrowth.uniformHeightClaims_of_deficit
+#print axioms FreezingGrowth.uniformHeightClaims_of_seed
+#print axioms FreezingGrowth.PWIT.ae_all_birth_pos
+
+#print axioms FreezingGrowth.PWIT.firstBirth_joint_law
+#print axioms FreezingGrowth.PWIT.map_birth_finite_sum
+#print axioms FreezingGrowth.PWIT.heightCDF_firstBirth_integral
+
+#print axioms FreezingGrowth.scalar_renewal_unique
+#print axioms FreezingGrowth.PWIT.map_birth_gamma
+#print axioms FreezingGrowth.PWIT.integral_rankBirthCount_eq_choose
+#print axioms FreezingGrowth.PWIT.heightCDF_renewal_integratingFactor
+#print axioms FreezingGrowth.PWIT.heightCDF_eq_geometricCdf
+#print axioms FreezingGrowth.PWIT.reaches_probability_eq_geometric_tail
+#print axioms FreezingGrowth.RRT.tendsto_seedIndex_time_gap
+#print axioms FreezingGrowth.RRT.constantSuccessSeed_of_clockLowerSeed
+
+#print axioms FreezingGrowth.PWIT.sum_integral_rankBirthCount_le
+#print axioms FreezingGrowth.PWIT.hasSum_integral_rankBirthCount
+
+#print axioms FreezingGrowth.PWIT.lintegral_generationCount
+#print axioms FreezingGrowth.PWIT.integral_generationCount_toReal
+#print axioms FreezingGrowth.PWIT.integral_leading_rankClass
+#print axioms FreezingGrowth.PWIT.rankIncrementMeasure_eq_withDensity
+#print axioms FreezingGrowth.PWIT.uniformRankIncrementLaw_normalized_joint_law
+#print axioms FreezingGrowth.PWIT.uniformRankIncrementLaw_normalized_independent_total
+#print axioms FreezingGrowth.PWIT.gammaPDFReal_nat_succ_lower_window
+#print axioms FreezingGrowth.PWIT.gammaPDFReal_nat_succ_upper
+#print axioms FreezingGrowth.PWIT.gammaMeasure_nat_succ_standardized_window_lower
+#print axioms FreezingGrowth.PWIT.tendsto_critical_log_intensity
+#print axioms FreezingGrowth.PWIT.lintegral_pathEventCount
+#print axioms FreezingGrowth.PWIT.integral_leadingCount_Ioc
+#print axioms FreezingGrowth.PWIT.eventually_exactLeadingWindowCount_mean_pos
+#print axioms FreezingGrowth.PWIT.overlap_factor_le
+#print axioms FreezingGrowth.PWIT.summable_pow_mul_exp_neg_rpow
+#print axioms FreezingGrowth.PWIT.probability_pos_lower_of_moments
+
+#print axioms FreezingGrowth.PWIT.offspringPairIntensity_eq
+#print axioms FreezingGrowth.PWIT.rootArrivals_childSamples_joint_law
+#print axioms FreezingGrowth.PWIT.generationIncrementIntensity_eq
+#print axioms FreezingGrowth.PWIT.extendedGenerationPairIntensity_manyToTwo
+#print axioms FreezingGrowth.PWIT.map_extendedGenerationPairIntensity_restrict
+#print axioms FreezingGrowth.PWIT.generationSpacing_eq_scaled_simplex
+#print axioms FreezingGrowth.PWIT.exists_simplex_nearLeading_bound
+#print axioms FreezingGrowth.PWIT.nearLeadingIntensityDensity_exp_upper_uniform
+#print axioms FreezingGrowth.PWIT.integral_nearLeadingIntensityDensity_Ioc_uniform
+#print axioms FreezingGrowth.PWIT.lintegral_vectorEventCount_sq
+#print axioms FreezingGrowth.PWIT.vectorEventCount_endpointLeading
+#print axioms FreezingGrowth.PWIT.lintegral_vectorEventCount_sq_decomposition
+#print axioms FreezingGrowth.PWIT.sum_threeFactorDepthWeight_le
+
+#print axioms FreezingGrowth.PWIT.overlapIntensity_critical_le
+#print axioms FreezingGrowth.PWIT.uniform_exactLeadingWindow_secondMoment
+#print axioms FreezingGrowth.PWIT.clockLowerSeed
+#print axioms FreezingGrowth.uniformHeightClaims
+#print axioms FreezingGrowth.Paper.theorem_1_2
+#print axioms FreezingGrowth.Paper.theorem_1_2_probability
+#print axioms FreezingGrowth.Paper.theorem_1_2_expectation
+
+#print axioms FreezingGrowth.RRT.uniformUpperExcess
+#print axioms FreezingGrowth.RRT.uniformRoughAbsoluteDeviation
+#print axioms FreezingGrowth.RRTSplit.uniformRoughHeightGap
+#print axioms FreezingGrowth.RRT.depthCenteredMoment_four_le_mean
+#print axioms FreezingGrowth.RRT.treeMeanFluctuation_le_one
+#print axioms FreezingGrowth.RRT.expectedDistinctDepthGap_lower
+#print axioms FreezingGrowth.RRT.tendsto_expectedDistinctDepthGap_atTop
+#print axioms FreezingGrowth.twoActivePrefix_profile_integral
+#print axioms FreezingGrowth.tendsto_expectedTwoSurvivorGap_atTop
+#print axioms FreezingGrowth.RRT.tendsto_expectedDistinctDepthGap_sub_natPolynomialSuffixLogLog
+#print axioms FreezingGrowth.seeded_pair_gap_lower
+
+#print axioms FreezingGrowth.RRT.uniformLowerTailExponential
+#print axioms FreezingGrowth.HeightProfile.expectedHeight_twoActivePrefix_freeze_attach
+#print axioms FreezingGrowth.HeightProfile.expectedHeight_twoActivePrefix_attach_freeze
+#print axioms FreezingGrowth.RRTSplit.uniformResidualBound_pow_nine
+#print axioms FreezingGrowth.freezeAttachExpectedGap_lower
+#print axioms FreezingGrowth.tendsto_freezeAttachExpectedGap_atTop
+#print axioms FreezingGrowth.attachFreeze_expected_gap_ge
+#print axioms FreezingGrowth.removeFreezeAttachClaim
+#print axioms FreezingGrowth.removeAttachFreezeClaim
+#print axioms FreezingGrowth.Paper.proposition_1_1_i
+#print axioms FreezingGrowth.Paper.proposition_1_1_ii
+#print axioms FreezingGrowth.Paper.proposition_1_1
+#print axioms FreezingGrowth.paperPrefixSize_pow_nine_le
+#print axioms FreezingGrowth.tendsto_paperPrefixSize_atTop
+#print axioms FreezingGrowth.RRTSplit.uniformResidualBound_of_pow_nine_le
+#print axioms FreezingGrowth.freezeAttachExpectedGap_floor_tendsto
+#print axioms FreezingGrowth.attachFreezeExpectedGap_floor_tendsto
+#print axioms FreezingGrowth.attachFreezeExpectedDifference_floor_tendsto
+#print axioms FreezingGrowth.TwoSeedCoupling.depthMaximumLaw_profile
+#print axioms FreezingGrowth.TwoSeedCoupling.depthMaximumLaw_maximum
+#print axioms FreezingGrowth.TwoSeedCoupling.source_height_coupling
+#print axioms FreezingGrowth.TwoSeedCoupling.source_decompositions_joint
+#print axioms FreezingGrowth.RRTSplit.residual_uniform_tendsto_zero
+#print axioms FreezingGrowth.TwoSeedCoupling.tendsto_meanZPositive_paperPrefix
+#print axioms FreezingGrowth.TwoSeedCoupling.tendsto_meanHatZPositive_paperPrefix
+#print axioms FreezingGrowth.TwoSeedCoupling.sourceZPositive_strict_tail_le_comparison
+#print axioms FreezingGrowth.TwoSeedCoupling.sourceHatZPositive_strict_tail_le_comparison
+#print axioms FreezingGrowth.Forward.twoSeedTaggedFreezeLaw_eq
+#print axioms FreezingGrowth.RRT.heightLaw_boundedHeight_le_geometric
+#print axioms FreezingGrowth.question2_threshold_divergence
+#print axioms FreezingGrowth.Paper.question_2_threshold_divergence
+#print axioms FreezingGrowth.RRT.heightLaw_firstOrder_in_probability
+#print axioms FreezingGrowth.RRT.meanHeight_div_log_tendsto_exp_one
+#print axioms FreezingGrowth.TwoSeedCoupling.taggedHeightModelLaw_joint
+#print axioms FreezingGrowth.TwoSeedCoupling.caseTag_independent_data
+#print axioms FreezingGrowth.TwoSeedCoupling.taggedHeightModelLaw_restrict_case
+#print axioms FreezingGrowth.TwoSeedCoupling.taggedHeight_marginal
+#print axioms FreezingGrowth.RRTSplit.firstEdgeSplit_first_height_pos
+#print axioms FreezingGrowth.TwoSeedCoupling.caseHeightLaw_zero_mean_le
+#print axioms FreezingGrowth.TwoSeedCoupling.caseHeightLaw_one_mean_le
+#print axioms FreezingGrowth.TwoSeedCoupling.case_two_expected_difference_floor_tendsto
+#print axioms FreezingGrowth.RRT.seed_three_quarters_of_constantSuccessSeed
+#print axioms FreezingGrowth.RRT.uniformLowerTailPaperRate
+#print axioms FreezingGrowth.RRT.eventually_paper_centered_event_inclusions
+#print axioms FreezingGrowth.paper_height_comparison_polynomial
+#print axioms FreezingGrowth.RRT.constantSuccessSeed_critical
+#print axioms FreezingGrowth.RRT.uniformLowerDeficit_critical
+#print axioms FreezingGrowth.twoActivePrefix_treePairLaw_eq_bind_vertices
+#print axioms FreezingGrowth.PWIT.gammaPDFReal_nat_upper
+#print axioms FreezingGrowth.PWIT.gammaMeasure_nat_unitBand_lower
+#print axioms FreezingGrowth.PWIT.softBridge_probability_le_occupancy
+#print axioms FreezingGrowth.PWIT.simplex_softBridge_probability_le_sum
+#print axioms FreezingGrowth.PWIT.simplex_near_position_probability_eq_occupancy
+#print axioms FreezingGrowth.PWIT.simplex_leading_occupancy_bound
+#print axioms FreezingGrowth.PWIT.simplex_leading_occupancy_prefix_bound
+#print axioms FreezingGrowth.PWIT.short_log_window_allowance_bound
+#print axioms FreezingGrowth.PWIT.sum_min_logBallotWeight_le
+#print axioms FreezingGrowth.PWIT.degreeBallotPolynomial_exp_upper
+#print axioms FreezingGrowth.ReverseOrdered.treeLaw_order_independent
+#print axioms FreezingGrowth.ReverseOrdered.sourceInitializationLaw_ae_valid
+#print axioms FreezingGrowth.ReverseOrdered.sourceInitializationLaw_shorter
+#print axioms FreezingGrowth.ReverseOrdered.sourceInitializationLaw_one_used
+#print axioms FreezingGrowth.ReverseOrdered.prependLabel_joinChoice_commute
+#print axioms FreezingGrowth.ReverseOrdered.initializationChoice_pending_matching
+#print axioms FreezingGrowth.PWIT.simplex_log_occupancy_le_weight
+#print axioms FreezingGrowth.PWIT.simplex_log_occupancy_short_suffix
+#print axioms FreezingGrowth.RRT.heightLaw_critical_upper_tail_of_clock
+#print axioms FreezingGrowth.PWIT.simplex_log_ballot_bound
+#print axioms FreezingGrowth.ReverseOrdered.sourceDelayedLaw_ae_valid
+#print axioms FreezingGrowth.ReverseOrdered.sourceDelayedLaw_terminal_used
+#print axioms FreezingGrowth.RRT.uniformCriticalAbsoluteDeviation_of_clock
+#print axioms FreezingGrowth.RRT.uniformCriticalMeanDeviation_of_clock
+#print axioms FreezingGrowth.PWIT.criticalCrossingBarrier_small
+#print axioms FreezingGrowth.PWIT.criticalCrossingBarrier_first_half
+#print axioms FreezingGrowth.PWIT.criticalCrossingBarrier_second_half
+
+#print axioms FreezingGrowth.RRT.depthDifference_central_limit
+#print axioms FreezingGrowth.RRT.depthDifference_tendstoInDistribution
+
+#print axioms FreezingGrowth.RemoveAttachTreeCoupling.source_full_tree_coupling
+#print axioms FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_graphs
+#print axioms FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_orderedSeeds
+#print axioms FreezingGrowth.RemoveAttachTreeCoupling.sampleLaw_ae_prefix_components
+

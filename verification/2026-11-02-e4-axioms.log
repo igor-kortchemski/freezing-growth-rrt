@@ -1,0 +1,18 @@
+'FreezingGrowth.RRT.depthDifferenceLaw_integral_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifferenceLaw_integral_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifferenceLaw_integral_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifferenceLaw_distinct_test_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_depthDifferenceCosine_sub_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.depthDifferenceIdealProduct_log_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_depthDifferenceIdealProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.tendsto_depthDifferenceCosine_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.distinctDepthDifferenceLaw_eq_bind_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.charFun_normalizedDistinctDepthDifferenceLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FreezingGrowth.RRT.depthDifference_central_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FreezingGrowth.RRT.depthDifference_tendstoInDistribution' depends on axioms: [propext, Classical.choice, Quot.sound]

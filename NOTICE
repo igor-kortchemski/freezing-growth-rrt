@@ -1,0 +1,121 @@
+# Attribution and provenance
+
+The new Lean formalization is licensed under Apache-2.0, as selected by the
+user on 29 October 2026. See LICENSE.
+
+Four foundational modules were adapted from the local freezing1 companion
+project, copyright 2026 Igor Kortchemski, under Apache-2.0. They implement the
+same forward uniform-attachment/freezing model. The local snapshot was taken
+on 29 October 2026; no publication or external dependency on freezing1 is implied.
+Namespace and import prefixes were changed from Freezing1 to FreezingGrowth.
+The source-byte SHA-256 values at the time of copying were:
+
+- Path.lean: b57e8e3cd4e87b80f2c15fe306ec9fe8482eda60592b5b946d7ab0464edf4fdb
+- Extinction.lean: 74da01e5cccd85cd3b55032a5afa4c8ca0fd5c6b5c3dc3770fed869291706d76
+- ForwardTree.lean: 71af521f6cd0322ca8370514f5e0e71aa425ce63d04036e5f6bb0c5e8e0c1317
+- ForwardLaw.lean: cf76862efe85d37936a225df1aeaec5fd4176ae555b21e9e3e382b771e43c124
+
+The copied foundation is checked in this project with Lean 4.35.0; reuse does
+not establish any of this paper's main results.
+
+The original paper, its figures and its LaTeX sources retain their own copyright
+and licensing (arXiv:2505.16571v2, which the arXiv record lists under CC BY 4.0)
+and are not part of this repository; Apache-2.0 does not apply to them.
+The development used a local adaptation of the LeanAutoformalizationSkills
+collection by Scott Armstrong (CC BY 4.0, https://github.com/scottnarmstrong/LeanAutoformalizationSkills,
+which in turn credits cameronfreer/lean4-skills under MIT and leanprover/skills
+under Apache-2.0). Those instruction files are not redistributed here; they are
+not licensed by, and do not license, this repository's Lean code.
+
+Bennett concentration proofs were additionally adapted from
+Freezing1/BernoulliConcentration.lean, source SHA-256
+1318fdd06cae3b71f4fede4fdbfca460c31cb83c167bec2da6efd2a315051036.
+BennettRate.lean retains only the elementary defining formula required by these proofs.
+
+Additional active-height modules and lower-tail arguments were adapted from
+the same Apache-2.0 companion snapshot, with source-byte SHA-256 values:
+
+- HeightScale.lean: b05953b141a3e164b868d2f7c9a72ea30b55f598da45fb6ebcdd3883222fa1be
+- ForwardHeight.lean: 9cce14224a672919fc61de2d697644eebcb7b1a5ac66954b9f5fdaf20b2b562c
+- ForwardMaximum.lean: 9475945570b7d97ab8709acec6f824cee652106e1a12ed346ed7f0c89f4d04c1
+
+HeightScale and ForwardHeight use the renamed namespace. LowProfile extracts
+and extends the negative-MGF/lower-tail argument, using this project's verified
+maximum-height observable. No live sibling-project dependency is used.
+
+The explicit finite product of independent Bernoulli variables was adapted
+from Freezing1/BernoulliProductLaw.lean, source SHA-256
+832e2960320fd805e3e812be8e347029c13c5388a84c8a891a11b3ab6fd17f92.
+The reciprocal-parameter positivity argument was adapted from
+Freezing1/ScheduleBernoulli.lean, source SHA-256
+a41c4b00d5c31304cfc12ebcffdc3ec63d19d39ee450e1f9dc9ae9634bf2c21f.
+Only that finite parameter argument is reused: this project's parameters retain
+the reciprocal population at every step and sum only attachment coordinates.
+ActiveHeightBernoulli supplies a new proof connecting the actual forward
+active-height law to the independent product sum. These sources retain the
+companion project's Apache-2.0 attribution above.
+
+The unconditional MGF-to-Bennett-tail lemma in MGFConcentration.lean was
+adapted from Freezing1/MGFLimits.lean, source SHA-256
+d032302835691d582a427ae5bb8dae286fda760fdb0db7a6b363c3a4f9344c92.
+Only that analytic implication is reused, with this project's Bennett rate;
+none of the companion's later limit hypotheses is imported. RRTUniformDepth
+proves the pure-attachment sampling and normalization bridges in this project.
+
+## Reverse-construction adaptations
+
+The reverse forest, canonical tree, and finite probability arguments were
+additionally adapted on 29 October 2026 from the same Apache-2.0 companion
+project, copyright 2026 Igor Kortchemski. The snapshot is incorporated as source;
+there is no live sibling-project dependency. Namespaces and import paths were
+changed to FreezingGrowth. The ordered-forest and height-observable bridges are
+new local additions. Reuse and attribution do not themselves certify the
+adapted mathematics; current verification is recorded in FORMALIZATION_REPORT.md.
+
+Source filenames, snapshot SHA-256 values, and local destinations:
+
+- AtomicMeasureComparison.lean: `2faf7717183df88dc5eb845f82fd6ba1714d83cc839290a500413d479dbbe8eb`; adapted in `FreezingGrowth/ReverseAtomicMeasureComparison.lean`.
+- BirthTime.lean: `72cb5956ae5ff792ddbdb3a6d8c0c04f272f4d501fb21ee8658a319c9981bd31`; adapted in `FreezingGrowth/ReverseBirthTime.lean`.
+- CanonicalForwardShape.lean: `3cfb3857488634150c4d6b22607995d1e58f977d007a3c539f6f6acc8de3d345`; adapted in `FreezingGrowth/ReverseCanonicalForwardShape.lean`.
+- CanonicalReverseFibers.lean: `3ed655b52fa0059ef64c5160ea6098da9ce92653c91f4d0d30c0a097d3d4d01a`; adapted in `FreezingGrowth/ReverseCanonicalReverseFibers.lean`.
+- CanonicalReversePointMass.lean: `d33f48c630a9213f27b8ef6e51a3107d11d1df23176dc4e6100684fa082e772a`; adapted in `FreezingGrowth/ReverseCanonicalReversePointMass.lean`.
+- CanonicalReverseRelabel.lean: `d48ddb99f3447942f568951c90261ac97ce09c619fec6d0ac2cce01cf47dbf91`; adapted in `FreezingGrowth/ReverseCanonicalReverseRelabel.lean`.
+- CanonicalReverseState.lean: `64f7dcc8a6be9fcb3f598bce4c843cba94df068e521867736ba2440c4517000c`; adapted in `FreezingGrowth/ReverseCanonicalReverseState.lean`.
+- CanonicalTreeObservable.lean: `e275dcfbcfc6ddcb00b85c12de34487df87773e4e17376983d6c7b833615e2b3`; adapted in `FreezingGrowth/ReverseCanonicalTreeObservable.lean`.
+- ConstructionEquivalence.lean: `98054fde5e6ff7ad3b2c1c4dae9467ec01802ae4fe59bb662aa7a248ad618dfb`; adapted in `FreezingGrowth/ReverseConstructionEquivalence.lean`.
+- ForwardEdgeOrder.lean: `6e4bb09b789d0cb0d0e75b34c3204550db6469bcd9b83afb1d7e7aea79260799`; adapted in `FreezingGrowth/ReverseForwardEdgeOrder.lean`.
+- ForwardHistoryExistence.lean: `186f50221dfd60b6cbcfb09843aaa1049f1de8e3cb51e7d593fa828cbf031b37`; adapted in `FreezingGrowth/ReverseForwardHistoryExistence.lean`.
+- ForwardHistorySupport.lean: `4757e9e785f32392f157a940c7c12374c7fc27baacf5e9947f18b729f98de4c3`; adapted in `FreezingGrowth/ReverseForwardHistorySupport.lean`.
+- ForwardLabels.lean: `d19b74a3610cbf5f4302eb0496080eb4ed46530afa161e00f6f90ca4618c5d58`; adapted in `FreezingGrowth/ReverseForwardLabels.lean`.
+- ForwardPointMass.lean: `56ed06ab0fcba2e5e872c38b6e4ac1fe088ca07814f0b74000807817414338d4`; adapted in `FreezingGrowth/ReverseForwardPointMass.lean`.
+- ForwardReconstruction.lean: `a95599f9eed584d05b5005922662387a71506f0cf5e89fcd0a0d57be1d1cad5e`; adapted in `FreezingGrowth/ReverseForwardReconstruction.lean`.
+- ForwardScheduleSupport.lean: `697e66b4659e91a126bfa5e9bcc8c06a79f62fa372c5f98626b8ef5960bab6c0`; adapted in `FreezingGrowth/ReverseForwardScheduleSupport.lean`.
+- ForwardStateDefaults.lean: `e6a2af53b7bb59a2d328662e0cd1e7e2d405f61e1447fcfc8b3f7234ba067412`; adapted in `FreezingGrowth/ReverseForwardStateDefaults.lean`.
+- HistoryProbability.lean: `d1d8c59eb3a0d98fac0f63fcdd929a87f61739930e3b4e706395673ab4e4ba5f`; adapted in `FreezingGrowth/ReverseHistoryProbability.lean`.
+- ReverseForest.lean: `f4fd35aa1289db05bca5bed3932257c0c0c07604fcf292d3d08b1f02a99aba10`; adapted in `FreezingGrowth/ReverseForest.lean`.
+- ReverseStampedDefaults.lean: `7ec0c627903a5e109b964bd34444b18ed075f8bc7a83a10162bfad4915404e77`; adapted in `FreezingGrowth/ReverseStampedDefaults.lean`.
+- ReverseStampedForest.lean: `7f18e235b648bb2add43c5f1e59e41bcc62b5860408571d62b20d480d076cd0c`; adapted in `FreezingGrowth/ReverseStampedForest.lean`.
+- ReverseStampedHistoryExistence.lean: `389aaf4983bc9154b95d59d992f3899643cf872aceb0658c7698fb4ac96c75e4`; adapted in `FreezingGrowth/ReverseStampedHistoryExistence.lean`.
+- ReverseStampedPointMass.lean: `178d64f0c0420cc8fd1162e1fbad79619583f31eed495e32ad2b26e74e9356cf`; adapted in `FreezingGrowth/ReverseStampedPointMass.lean`.
+- ReverseStampedReconstruction.lean: `866030f4a6937e399431f520e1df48379843e96c495d7beb6b2fb17d5fc94768`; adapted in `FreezingGrowth/ReverseStampedReconstruction.lean`.
+- ReverseStampedRelabel.lean: `ceb02ac47d3b4f82b03cc9c9b59acab92b682ab3bdc3a287ed350c7649734477`; adapted in `FreezingGrowth/ReverseStampedRelabel.lean`.
+- ReverseStampedTransitionProbability.lean: `e2721182163c507b5519af6f4daab803ba5ce75fe75875f3a51b3e41c9dfca7f`; adapted in `FreezingGrowth/ReverseStampedTransitionProbability.lean`.
+- ReverseTimestampOrder.lean: `27343b6f26e29fecbf95c25321c3ce3c9dbeaea7cca7c952806d5bc3932a6c93`; adapted in `FreezingGrowth/ReverseTimestampOrder.lean`.
+- ReverseTimestampSupport.lean: `eca2f2dbb9e598626c7f699ecddfb7ba29c4735efdb2f4faf0dd9ee0aea40013`; adapted in `FreezingGrowth/ReverseTimestampSupport.lean`.
+- RootedForest.lean: `c54405f0cc53b7c7e4e80a84ac55ce4d0677bcffc3214106796ce7cb7c24fc23`; adapted in `FreezingGrowth/ReverseRootedForest.lean`.
+- RootedForestExtensionality.lean: `150e9fb03209943d9a2e4749885c09fcae7f78f3017d98562463e4c558d985a9`; adapted in `FreezingGrowth/ReverseRootedForestExtensionality.lean`.
+- RootedForestLaw.lean: `3393676327c51f229255111e0d4afea49cff5de95254dd90aa7d9ecc94ec4c16`; adapted in `FreezingGrowth/ReverseRootedForestLaw.lean`.
+- RootedForestRelabel.lean: `b688f7e33483a8053eec6d6af8230570fe5848a649cd3f3fcbd2417ab88fec5d`; adapted in `FreezingGrowth/ReverseRootedForestRelabel.lean`.
+- UniformRootPair.lean: `82cab43f9470f4e0665088ba8f162fb9ccd8155e1b46b7a6719910d60aac8ee4`; adapted in `FreezingGrowth/ReverseUniformRootPair.lean`.
+- CanonicalUniformSampling.lean: `271e77d4d2023ff68175091aa233549f8cf16482ae85f184dd8d77850ab51a37`; adapted in `FreezingGrowth/ReverseIndexedKernel.lean`.
+
+## Scaling-result adaptations
+
+The Scaling*.lean development also adapts local freezing2 scaling proofs and
+selected Apache-2.0 companion analytic arguments. On 29 October 2026 the user
+explicitly confirmed that the chosen Apache-2.0 license covers reuse of the
+freezing2 scaling code in this project. This records permission for the local
+adaptation; it does not change the sibling repository's files or license status.
+See SCALING_PROVENANCE.md for exact source snapshots and extracted fragments.
+Mathematical verification remains distinct from licensing and is recorded in
+FORMALIZATION_REPORT.md.

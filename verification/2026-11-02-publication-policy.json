@@ -1,0 +1,70 @@
+{
+  "checked_date": "2026-11-02",
+  "purpose": "Local candidate preparation; not full Palomar verification",
+  "sources": {
+    "policy": {
+      "repository": "PalomarRegistry/PalomarPolicy",
+      "commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+      "files": {
+        "CONTRIBUTING.md": {
+          "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarPolicy/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60/CONTRIBUTING.md",
+          "sha256": "86865671b28515a9ba79202eec0c58dadd23dc6d832532bc01a8cdeb845ea401"
+        },
+        "docs/specification.md": {
+          "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarPolicy/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60/docs/specification.md",
+          "sha256": "d12cb8fc10739bb5b76b7d04cac03daf868ecc3480bff95dae748db4292219d7"
+        }
+      }
+    },
+    "submission": {
+      "repository": "PalomarRegistry/PalomarSubmission",
+      "commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "files": {
+        "toolchains.json": {
+          "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/toolchains.json",
+          "sha256": "fd40347e4b586e7c42233b35f11efb006d25033b9a7ded9565719edf7aa98354",
+          "content": {
+            "schema_version": 2,
+            "minimum": "v4.35.0-rc2"
+          }
+        },
+        "allowed-challenge-repositories.json": {
+          "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/allowed-challenge-repositories.json",
+          "sha256": "bfb114daf5ead308052ccec85b1029aa0c875bebe6eec8f642df57f2ddbd8971",
+          "content": {
+            "schema_version": 1,
+            "roots": [
+              {
+                "repository": "leanprover-community/mathlib4",
+                "repository_aliases": [],
+                "official_ref": "refs/heads/master",
+                "include_semver_release_tags": true,
+                "include_pinned_manifest_closure": true,
+                "trust_level": "high"
+              },
+              {
+                "repository": "TauCetiProject/TauCeti",
+                "repository_aliases": [
+                  "FormalFrontier/TauCeti"
+                ],
+                "official_ref": "refs/heads/main",
+                "accepted_revisions": [
+                  "221bb56a017bb794421eac4fa543d7a5e85add75"
+                ],
+                "include_pinned_manifest_closure": true,
+                "trust_level": "qualified"
+              },
+              {
+                "repository": "leanprover/cslib",
+                "repository_aliases": [],
+                "official_ref": "refs/heads/main",
+                "include_pinned_manifest_closure": true,
+                "trust_level": "qualified"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

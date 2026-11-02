@@ -1,0 +1,134 @@
+module
+
+public import FreezingGrowth.Basic
+public import FreezingGrowth.MainStatements
+public import FreezingGrowth.PaperResults
+public import FreezingGrowth.HeightAlgebra
+public import FreezingGrowth.TreeCounts
+public import FreezingGrowth.StarComparison
+public import FreezingGrowth.FiniteLowProfile
+public import FreezingGrowth.FirstPeakDeletion
+public import FreezingGrowth.FamilyMinima
+public import FreezingGrowth.LowPopulationAsymptotic
+public import FreezingGrowth.PopulationCutoff
+public import FreezingGrowth.HeightProfile
+public import FreezingGrowth.ActiveHeightBernoulli
+public import FreezingGrowth.FiniteActiveHeight
+public import FreezingGrowth.RRTUniformDepth
+public import FreezingGrowth.AlternatingHeight
+public import FreezingGrowth.BinomialLowerBound
+public import FreezingGrowth.RemoveAttachWitness
+public import FreezingGrowth.HighPopulationReduction
+public import FreezingGrowth.HighPopulationCentering
+public import FreezingGrowth.RRTLowerCenter
+public import FreezingGrowth.HighPopulationWeakCentering
+public import FreezingGrowth.ReverseOrderedHeightBridge
+public import FreezingGrowth.ReverseHistoryPair
+public import FreezingGrowth.ReverseHeightList
+public import FreezingGrowth.ReverseHeightInitialization
+public import FreezingGrowth.ReverseHeightPermutation
+public import FreezingGrowth.ScalingVertices
+public import FreezingGrowth.RRTStarProbability
+public import FreezingGrowth.AlternatingStarProbability
+public import FreezingGrowth.HeightExpectationOrder
+public import FreezingGrowth.ReverseHeightDynamics
+public import FreezingGrowth.ReverseHeightRecursion
+public import FreezingGrowth.ReverseSingletonInsertion
+public import FreezingGrowth.ReverseFirstPairDeletion
+public import FreezingGrowth.HighPopulationDomination
+public import FreezingGrowth.RRTSplitLaw
+public import FreezingGrowth.RRTSplitCDF
+public import FreezingGrowth.RRTCentralSplits
+public import FreezingGrowth.RRTLowerTailAmplification
+public import FreezingGrowth.RRTLowerDeficit
+public import FreezingGrowth.HighPopulationAssembly
+public import FreezingGrowth.RRTGeometricMixture
+public import FreezingGrowth.PWIT.Basic
+public import FreezingGrowth.PWIT.FirstBirth
+public import FreezingGrowth.PWIT.PathClocks
+public import FreezingGrowth.PWIT.GoodPaths
+public import FreezingGrowth.PWIT.HeightRenewal
+public import FreezingGrowth.PWIT.HeightEquation
+public import FreezingGrowth.PWIT.FirstMoment
+public import FreezingGrowth.PWIT.GenerationFirstMoment
+public import FreezingGrowth.PWIT.GenerationCount
+public import FreezingGrowth.PWIT.AllRankLeading
+public import FreezingGrowth.PWIT.AllRankMoment
+public import FreezingGrowth.PWIT.OverlapEstimates
+public import FreezingGrowth.PWIT.SimplexMixture
+public import FreezingGrowth.PWIT.GammaWindows
+public import FreezingGrowth.PWIT.GoodCountMoment
+public import FreezingGrowth.PWIT.SimplexNearLeading
+public import FreezingGrowth.PWIT.GenerationBridge
+public import FreezingGrowth.PWIT.PairDecomposition
+public import FreezingGrowth.PWIT.BallotIntensityUniform
+public import FreezingGrowth.PWIT.ThreeFactorOverlap
+public import FreezingGrowth.UniformHeightBounds
+public import FreezingGrowth.RRTGeometricRenewal
+public import FreezingGrowth.RenewalUniqueness
+public import FreezingGrowth.PWIT.HeightBridge
+public import FreezingGrowth.RRTSeedIndex
+public import FreezingGrowth.RRTLowerSeed
+public import FreezingGrowth.ProfileTailStatistics
+public import FreezingGrowth.ProfileChunk
+public import FreezingGrowth.Question3Bound
+public import FreezingGrowth.RemoveAttachAnalytic
+public import FreezingGrowth.RemovalEventually
+public import FreezingGrowth.TwoSurvivorGap
+public import FreezingGrowth.RRTSplitRoughGap
+public import FreezingGrowth.RRTDepthGapAsymptotics
+public import FreezingGrowth.SeedComparison
+public import FreezingGrowth.ProfileWordExpectations
+public import FreezingGrowth.RRTLowerTailExponential
+public import FreezingGrowth.TwoSeedHeightDecomposition
+public import FreezingGrowth.ForwardTwoSeedCases
+public import FreezingGrowth.Question2Threshold
+public import FreezingGrowth.RRTFirstOrder
+public import FreezingGrowth.TaggedCaseBounds
+public import FreezingGrowth.TaggedCaseLimits
+public import FreezingGrowth.PaperHeightComparison
+public import FreezingGrowth.RRTCriticalLowerSeed
+public import FreezingGrowth.TwoSurvivorTreeLaw
+public import FreezingGrowth.PWIT.GammaBridgeBounds
+public import FreezingGrowth.PWIT.CyclicBarrier
+public import FreezingGrowth.PWIT.SimplexSoftBallot
+public import FreezingGrowth.PWIT.LogBarrierSummation
+public import FreezingGrowth.PWIT.PolynomialBallotDensity
+public import FreezingGrowth.ReverseOrderInvariance
+public import FreezingGrowth.ReverseInitializationValidity
+public import FreezingGrowth.ReverseDelayedMatching
+public import FreezingGrowth.PWIT.LogBallotKernel
+public import FreezingGrowth.RRTCriticalUpperTransfer
+public import FreezingGrowth.PWIT.SoftBallotSummation
+public import FreezingGrowth.ReverseDelayedDynamics
+public import FreezingGrowth.RRTCriticalDeviation
+public import FreezingGrowth.PWIT.CriticalBarrierGeometry
+public import FreezingGrowth.TwoSeedSharpGap
+public import FreezingGrowth.HighPopulationSharp
+public import FreezingGrowth.ReverseSourceLongerHistory
+public import FreezingGrowth.RRTSharpSplitTail
+public import FreezingGrowth.ReverseDelayedDomination
+public import FreezingGrowth.ReverseFirstUseHistory
+public import FreezingGrowth.ReverseSourceShorterIndependence
+public import FreezingGrowth.ReverseSourceDeletionCoupling
+
+public import FreezingGrowth.RRTDepthDifferenceCLT
+public import FreezingGrowth.TwoSeedGraftSource
+public import FreezingGrowth.TaggedGraftProcessSource
+public import FreezingGrowth.RemoveAttachTreeSource
+
+/-!
+# Does freezing impede the growth of random recursive trees?
+
+Entry point for the formalization of arXiv:2505.16571v2.
+The library includes the forward and reverse models, Bennett concentration,
+both uniform conclusions of Theorem 1.2, and the cited alternating and
+polynomial height limits. All assertions of Proposition 1.1 and Theorems 1.2
+and 1.3 are proved. All 82 mathematical inventory obligations are complete in
+the documented source-faithful or corrected forms; three research questions remain open.
+Consult `FORMALIZATION_REPORT.md` for exact
+coverage and evidence, including explicit premises on conditional helpers.
+-/
+
+
+
