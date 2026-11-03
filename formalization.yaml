@@ -3,7 +3,7 @@
   "version": "v0.4",
   "project": {
     "name": "Does freezing impede the growth of random recursive trees?",
-    "description": "Lean 4 formalization of arXiv:2505.16571v2. The source inventory retains 82 completed mathematical claims, with documented source corrections, and three open research questions. The five numbered Introduction results pass local sandboxed Comparator, Lean kernel replay and NanoDa checking. The code is published on GitHub; full Palomar verification and submission are pending.",
+    "description": "We formalize the principal results of \u201cDoes freezing impede the growth of random recursive trees?\u201d for uniform attachment trees with freezing. We prove uniform height lower bounds over all admissible operation sequences with n attachment steps: the height is at least e log n \u2212 5 log log n with probability tending to one, uniformly over these sequences, and the same lower bound holds for expected height for sufficiently large n. We also formalize deletion comparisons: deleting attachment or freezing steps can increase expected height, whereas deleting the attachment\u2013freezing pair at the first change of sign stochastically decreases height.",
     "authors": [
       "Igor Kortchemski"
     ],
