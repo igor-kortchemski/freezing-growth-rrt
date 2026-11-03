@@ -2,8 +2,8 @@
 {
   "version": "v0.4",
   "project": {
-    "name": "Freezing growth for random recursive trees",
-    "description": "Lean 4 formalization of arXiv:2505.16571v2. The source inventory retains 82 completed mathematical claims, with documented source corrections, and three open research questions. The five numbered Introduction results pass local sandboxed Comparator, Lean kernel replay and NanoDa checking. Full Palomar verification and publication are deferred.",
+    "name": "Does freezing impede the growth of random recursive trees?",
+    "description": "Lean 4 formalization of arXiv:2505.16571v2. The source inventory retains 82 completed mathematical claims, with documented source corrections, and three open research questions. The five numbered Introduction results pass local sandboxed Comparator, Lean kernel replay and NanoDa checking. The code is published on GitHub; full Palomar verification and submission are pending.",
     "authors": [
       "Igor Kortchemski"
     ],

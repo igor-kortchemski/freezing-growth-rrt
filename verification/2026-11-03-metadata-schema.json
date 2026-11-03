@@ -4,5 +4,5 @@
   "schema_url": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json",
   "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
   "artifact": "formalization.yaml",
-  "artifact_sha256": "1ec77ed20134f5856c1fb1b8a2b33aba3c133dd41cece0ea347fecdd5704523f"
+  "artifact_sha256": "9d867f2a7ea4aeea89ecc28b61c07846ab351d753669eec982148d300ceb44af"
 }

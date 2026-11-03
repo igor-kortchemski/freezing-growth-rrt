@@ -27,8 +27,9 @@ axiom audits, not by this five-export Comparator configuration.
 
 ## External publication actions
 
-The full Palomar submission pipeline has not been run. No public upload,
-Palomar submission, or registration has occurred. No independent human
+The repository is public on GitHub, and its build/axiom/interface CI passed.
+The full Palomar submission pipeline has not been run. No Palomar submission
+or registration has occurred. No independent human
 mathematical review or editorial endorsement is claimed. These are deferred
 external publication actions, not outstanding mathematical proof obligations.
 

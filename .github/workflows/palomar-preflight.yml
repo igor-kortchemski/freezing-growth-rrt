@@ -1,0 +1,31 @@
+name: Palomar mechanical preflight
+run-name: Palomar preflight for ${{ inputs.commit }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: Full 40-character public source commit to verify
+        required: true
+        type: string
+      request_id:
+        description: Exactly 12 lowercase alphanumeric characters
+        required: true
+        default: freezing0001
+        type: string
+
+permissions:
+  contents: read
+
+# Manual mechanical verification only. This does not submit or register a result.
+jobs:
+  palomar-preflight:
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+    with:
+      repository: igor-kortchemski/freezing-growth-rrt
+      commit: ${{ inputs.commit }}
+      pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+      request_id: ${{ inputs.request_id }}
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
