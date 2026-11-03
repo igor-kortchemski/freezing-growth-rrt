@@ -1,5 +1,12 @@
 # Freezing growth for random recursive trees (Lean 4 formalization)
 
+[![CI](https://github.com/igor-kortchemski/freezing-growth-rrt/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/igor-kortchemski/freezing-growth-rrt/actions/workflows/ci.yml?query=branch%3Amain)
+[![Comparator: verified locally](https://img.shields.io/badge/Comparator-verified%20locally-brightgreen)](https://github.com/igor-kortchemski/freezing-growth-rrt/blob/8623d48c1defaea785a4fdddee79cf9a616e2a95/docs/COMPARATOR_DRAFT.md)
+
+The CI badge tracks `main`. The Comparator badge records the five Introduction
+results verified locally at [commit `8623d48`](https://github.com/igor-kortchemski/freezing-growth-rrt/commit/8623d48c1defaea785a4fdddee79cf9a616e2a95), with Lean and NanoDa;
+it is linked to that verification record.
+
 Lean 4 / Mathlib formalization of **Does freezing impede the growth of random
 recursive trees?** by A. Brandenberger, S. Briend, H. Cairns, R. Khanfir and
 I. Kortchemski, [arXiv:2505.16571v2](https://arxiv.org/abs/2505.16571v2).
@@ -12,7 +19,7 @@ I. Kortchemski, [arXiv:2505.16571v2](https://arxiv.org/abs/2505.16571v2).
 > declarations. A fresh Linux build and audit passed, and the official
 > five-result Comparator run passed under Bubblewrap namespaces; both NanoDa
 > and Lean accepted the Solution. Metadata and citation schema checks passed.
-> No public upload, Palomar submission, or full Palomar pipeline is claimed.
+> Palomar submission and the full Palomar pipeline remain deferred.
 
 The paper source is not redistributed here. Obtain `main.tex` from arXiv (v2);
 the version formalized has SHA-256
